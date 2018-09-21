@@ -1,0 +1,4 @@
+name,direction,priority,access,SourceAddressPrefix,SourcePortRange,DestinationAddressPrefix,DestinationPortRange,Protocol
+httpDataNode,Inbound,342,Allow,INTERNET,*,*,50075,Any
+
+

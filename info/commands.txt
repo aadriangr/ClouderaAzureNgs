@@ -1,0 +1,25 @@
+#Set variables for the Resource Group and the location
+$RGName = 'cloudera-administrator'
+$Location = 'West Europe'
+$nsgName = 'cloudera-security-group'
+
+#$NSG = Get-AzureRmNetworkSecurityGroup -Name $nsgName -ResourceGroupName $RGName
+
+#Add rule to existing to allow RDP
+#Add-AzureRmNetworkSecurityRuleConfig -NetworkSecurityGroup $NSG -Name 'httpDataNode' -Direction Inbound -Priority 342 -Access Allow -SourceAddressPrefix 'INTERNET' -SourcePortRange '*' -DestinationAddressPrefix '*' -DestinationPortRange '50075' -Protocol Any
+
+#Apply the change to the in memory object
+#Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup $NSG
+
+
+#Add-AzureRmNetworkSecurityRuleConfig -NetworkSecurityGroup $NSG -Name 'httpDataNode' -Direction Inbound -Priority 342 -Access Allow -SourceAddressPrefix 'INTERNET' -SourcePortRange '*' -DestinationAddressPrefix '*' -DestinationPortRange '50075' -Protocol Any
+
+#try:
+#    output = subprocess.check_output(
+#        ["C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe", ". \"./SamplePowershell\";"], stderr=subprocess.STDOUT, shell=True, timeout=3,
+#        universal_newlines=True)
+#    print("Output: " +  output)
+#except subprocess.CalledProcessError as exc:
+#    print("Status : FAIL", exc.returncode, exc.output)
+#else:
+#    print("Output: \n{}\n".format(output))
