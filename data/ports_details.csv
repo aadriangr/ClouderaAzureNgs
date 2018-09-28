@@ -61,3 +61,6 @@ sqoop_metastore_server_port,Inbound,360,Allow,INTERNET,*,*,16000,*
 sqoop_2_server,Inbound,361,Allow,INTERNET,*,*,12000,*
 sqoop_2,Inbound,362,Allow,INTERNET,*,*,12001,*
 clientport,Inbound,363,Allow,INTERNET,*,*,2181,*
+cms_http,Inbound,364,Allow,INTERNET,*,*,7183,*
+cms_metadata_server_http,Inbound,365,Allow,INTERNET,*,*,7187,*
+cms_server,Inbound,366,Allow,INTERNET,*,*,7180,*
