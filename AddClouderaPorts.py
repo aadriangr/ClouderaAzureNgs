@@ -40,6 +40,7 @@ with open(input_file) as port_file:
                 output_command_script.write(addPortCmdGenerator(port))
                 output_count += 1
             line_count += 1
+    output_command_script.write("Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup $NSG")
     print(f'Read {line_count} lines.')
     print(f'Processed {output_count} lines.')
 

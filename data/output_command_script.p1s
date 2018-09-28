@@ -1,5 +1,0 @@
-$RGName = 'cloudera-administrator'
-$Location = 'West Europe'
-$nsgName = 'cloudera-security-group'
-$NSG = Get-AzureRmNetworkSecurityGroup -Name $nsgName -ResourceGroupName $RGName
-Add-AzureRmNetworkSecurityRuleConfig -NetworkSecurityGroup $NSG -Name 'httpDataNode' -Direction Inbound -Priority 342 -Access Allow -SourceAddressPrefix 'INTERNET' -SourcePortRange '*' -DestinationAddressPrefix '*' -DestinationPortRange '50075' -Protocol Any
