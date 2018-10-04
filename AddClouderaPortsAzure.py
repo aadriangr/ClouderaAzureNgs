@@ -36,7 +36,7 @@ with open(input_file) as port_file:
             print(f'Column names are {", ".join(port)}')
             line_count += 1
         else:
-            if(len(port) == 9):
+            if(len(port) == 10):
                 output_command_script.write(addPortCmdGenerator(port))
                 output_count += 1
             line_count += 1
